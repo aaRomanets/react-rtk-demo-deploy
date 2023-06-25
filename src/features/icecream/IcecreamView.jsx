@@ -22,7 +22,7 @@ export const IcecreamView = () => {
                 onChange={e => setValue(parseInt(e.target.value))}
             />
             {/*Кнопка добавления нового количества пачек мороженного в хранилище store*/}
-            <button onClick = {() => dispatch(restocked(5))}>Restock ice creams</button>
+            <button onClick = {() => dispatch(restocked(value))}>Restock ice creams</button>
         </div>
     )
 }
